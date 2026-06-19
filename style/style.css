@@ -1,0 +1,127 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+    --white: #fff;
+    --e: #0012FB0C;
+    --bbg: #0039F920;
+    --bg: #003FFD52;
+    --c: #1C6BFE8D;
+    --a: #0062FF;
+    --d: #85B6FF;
+    --rbg: #F1000008;
+    --ra: #ef0000;
+    --rc: #FD00004D;
+    --rd: #FF4232BC;
+    --gbg:#00FB000C;
+    --ga: #2EFE29F7;
+    --gc: #25FD1B4F;
+    --gd: #20FF1A77;
+    --wa: #FFFFFF73;
+    --wbg: #ffffff13;
+    --ca: #00FFFF;
+    --cd: #00FEFED8;
+    --cc: #00FBFD7C;
+    --cbg:#00F9F921;
+    --f-size: 20px ;
+    --f-sz-i: 30px ;
+    --background-url: url(banner2.webp);
+    --font: 'Minecraft';
+    --bbrr: 30px;
+    --br: 2px solid var(--); /* active border bebas mau warna apa*/
+}
+   
+@font-face{
+    font-family: 'Minecraft';
+    src: url(../fonts/Minecraft.otf);
+   
+}
+
+body {
+    background: url(../images/banner2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Minecraft';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    border: 2px solid var(--c);
+    border-radius: 1rem;
+}
+
+.container {
+    text-align: center;
+    padding: 1rem 0.75rem;
+}
+
+.card-content {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-list {
+    color: #fff;
+    text-decoration: none;
+    background: var(--bbg);
+    display: grid;
+    align-content: space-between;
+    border: 2px solid var(--a);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition-duration: .3s;
+    margin-bottom: 1rem;
+    
+    h3 {
+       margin-top: 1rem;
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.btn-credit {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.25rem;
+    font-family: 'Minecraft';
+    border: 2px solid var(--cd);
+    color: var(--ca);
+    border-radius: 999px;
+    background: var(--cbg);
+    transition-duration: .3s;
+    
+    &:hover{
+        background: var(--cc);
+    }
+}
+
+.credit-content {
+    background: var(--cbg);
+    padding: 1rem 0.75rem;
+    color: var(--ca);
+}
+
+.credit-link {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.credit-link:hover {
+    text-decoration: underline;
+}
+
+.thanks-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+}
